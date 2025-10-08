@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Novo Item</h2>
+<form method="post" action="{{ url_for('new_item') }}">
+    <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+    <label>Título:<br><input type="text" name="title" required></label><br>
+    <label>Descrição:<br><textarea name="description"></textarea></label><br>
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}

@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 16px; max-width: 1000px;}
+nav { margin-bottom: 12px; }
+.messages { background:#fffbdd; border:1px solid #ffd; padding:10px; list-style:none; }
+table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+table, th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+@media (max-width:600px) {
+  table, thead, tbody, th, td, tr { display: block; }
+  td { border: none; padding: 6px 0; }
+}

@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Login</h2>
-<form method="post" action="{{ url_for('login') }}">
+<h2>Registrar</h2>
+<form method="post" action="{{ url_for('register') }}">
     <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
     <label>Usuário:<br><input type="text" name="username" required></label><br>
+    <label>Nome completo:<br><input type="text" name="fullname"></label><br>
     <label>Senha:<br><input type="password" name="password" required></label><br>
-    <button type="submit">Entrar</button>
+    <button type="submit">Cadastrar</button>
 </form>
 {% endblock %}
